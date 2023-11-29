@@ -1,0 +1,17 @@
+speech2text:
+  model: "base"
+
+
+logger:
+  file_path: "logs/logs.json"
+  format: "\
+    <green>{time:YYYY-MM-DD HH:mm:ss.SSS}</green> \
+    | <level>{level: <8}</level> \
+    | <cyan>{name}</cyan>::<cyan>{function}</cyan>::<cyan>{line}</cyan> \
+    - <level>{message}</level>"
+  rotation: "50 MB"
+  enqueue: True
+  # Write to file json string
+  serialize: True
+  # Available options are "CRITICAL", "ERROR", "WARNING", "INFO", "DEBUG", "TRACE"
+  level: "INFO"

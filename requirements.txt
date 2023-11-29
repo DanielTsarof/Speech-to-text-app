@@ -1,0 +1,6 @@
+librosa==0.10.1
+openai-whisper
+argparse==1.4.0
+loguru==0.7.2
+pydantic==2.5.2
+PyYAML==6.0.1
